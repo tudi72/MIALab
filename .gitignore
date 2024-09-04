@@ -5,6 +5,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# environment 
+mialab/
+python=3.8/
+
 # C extensions
 *.so
 

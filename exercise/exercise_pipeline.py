@@ -34,8 +34,8 @@ def collect_image_paths(data_dir):
 
     dir_filter = futil.DataDirectoryFilter()
 
-    # todo: create an instance of futil.FileSystemDataCrawler and pass the corresponding arguments
-    crawler_ = None  # todo: modify here
+    # TODO: create an instance of futil.FileSystemDataCrawler and pass the corresponding arguments
+    crawler_ = None  # TODO: modify here
 
     return crawler_
 
@@ -53,13 +53,13 @@ def load_images(image_paths):
 def register_images(image_dict, atlas_img):
     registration = fltr_reg.MultiModalRegistration()
     registration_params = fltr_reg.MultiModalRegistrationParams(atlas_img)
-    # todo execute the registration with the T1-weighted image and the registration parameters
-    registered_t1 = None  # todo: modify here
+    # TODO: execute the registration with the T1-weighted image and the registration parameters
+    registered_t1 = None  # TODO: modify here
 
     gt_img = image_dict[structure.BrainImageTypes.GroundTruth]
-    # todo: apply transform to GroundTruth image (gt_img) (hint: sitk.Resample, referenceImage=atlas_img,
+    # TODO: apply transform to GroundTruth image (gt_img) (hint: sitk.Resample, referenceImage=atlas_img,
     #  transform=registration.transform, interpolator=sitk.sitkNearestNeighbor
-    registered_gt = None  # todo: modify here
+    registered_gt = None  # TODO: modify here
 
     return registered_t1, registered_gt
 
@@ -76,10 +76,10 @@ def preprocess_filter_rescale_t1(image_dict, new_min_val, new_max_val):
             rescaled_img = sitk.RescaleIntensity(img, params.min, params.max)
             return rescaled_img
 
-    # todo: use the above filter and parameters to get the rescaled T1-weighted image
-    filter_ = None  # todo: modify here
-    filter_params = None  # todo: modify here
-    minmax_rescaled_img = None  # todo: modify here
+    # TODO: use the above filter and parameters to get the rescaled T1-weighted image
+    filter_ = None  # TODO: modify here
+    filter_params = None  # TODO: modify here
+    minmax_rescaled_img = None  # TODO: modify here
 
     return minmax_rescaled_img
 
@@ -90,9 +90,9 @@ def extract_feature_median_t1(image_dict):
             med_img = sitk.Median(img)
             return med_img
 
-    # todo: use the above filter class to get the median image feature of the T1-weighted image
-    filter_ = None  # todo: modify here
-    median_img = None  # todo: modify here
+    # TODO: use the above filter class to get the median image feature of the T1-weighted image
+    filter_ = None  # TODO: modify here
+    median_img = None  # TODO: modify here
 
     return median_img
 
