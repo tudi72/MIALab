@@ -17,4 +17,4 @@ eval "$(conda shell.bash hook)"
 conda activate mialab
 
 # Run your code
-srun python3 main_example_file.py
+srun python3 bin/hello_world.py
