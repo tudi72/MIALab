@@ -8,7 +8,8 @@ __pycache__/
 # environment 
 mialab/
 python=3.8/
-
+data/
+     
 # C extensions
 *.so
 
