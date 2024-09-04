@@ -4,8 +4,6 @@
 #SBATCH --job-name="JOB1_MIALAB"
 #SBATCH --time=24:00:00
 #SBATCH --mem-per-cpu=128G
-#SBATCH --partition=epyc2
-#SBATCH --qos=job_epyc2
 #SBATCH --mail-user=tudorita.zaharia@students.unibe.ch
 #SBATCH --mail-type=ALL
 #SBATCH --output=%x_%j.out
